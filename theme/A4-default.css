@@ -7,8 +7,9 @@ section
   width: 210mm;
   height: 297mm;
   justify-content: start;
-  padding: 30px;
   font-size: 14px;
+
+  padding: 1cm;
 }
 
 h2 {
