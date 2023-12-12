@@ -2,30 +2,42 @@
 
 @import 'default';
 
-section
-{
-  width: 210mm;
-  height: 297mm;
-  justify-content: start;
-  padding: 50px;
+@page {
+  size: A4;
+  margin: 0;
 }
 
-h2 {
-  font-size: 30px;
+section {
+  font-size: 24px;
+  padding: 1cm;
 }
 
-h3 {
-  font-size: 25px;
+/* スライドのタイトル */
+h1 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 0.5cm;
 }
 
-h4 {
-  font-size: 20px;
+/* ヘッダーとフッターの設定 */
+header, footer {
+  position: fixed;
+  width: 100%;
+  text-align: right;
+  font-size: 16px;
+  padding: 0.5cm;
 }
 
-p {
-  font-size: 20px;
+header {
+  top: 0;
 }
 
-li {
-  font-size: 20px;
+footer {
+  bottom: 0;
+}
+
+/* 画像の最適化 */
+img {
+  max-width: 100%;
+  max-height: 80%;
 }
