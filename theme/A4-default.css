@@ -48,8 +48,6 @@ li {
   font-size: 1rem;
 }
 
-/* 強調文字（**text**） */
 strong {
-  /* color: #442700; */
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
