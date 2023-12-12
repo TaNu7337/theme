@@ -51,3 +51,8 @@ li {
 strong {
   font-size: 1.125rem;
 }
+
+code {
+  font-family: 'Migu 1M';
+  font-size: 12px;
+}
