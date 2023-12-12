@@ -7,13 +7,7 @@ section
   width: 210mm;
   height: 297mm;
   justify-content: start;
-  font-size: 14px;
-
-  padding: 1cm;
-}
-
-h1 {
-  font-size: 35px;
+  padding: 30px;
 }
 
 h2 {
@@ -29,7 +23,7 @@ h4 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 li {
