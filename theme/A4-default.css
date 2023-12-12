@@ -11,37 +11,38 @@ section {
   justify-content: start;
 
   padding: 1cm;
-  font-size: 14px;
+  font-size: 16px;
 
   text-align: left;
 }
 
 h1 {
   text-align: center;
+  font-size: 2.2rem;
 }
 
 h2 {
   text-align: center;
 
-  font-size: 30px;
+  font-size: 2rem;
 }
 
 h3 {
   text-align: left;
-  font-size: 25px;
+  font-size: 1.5rem;
 }
 
 h4 {
   text-align: left;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 p {
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
 }
 
 li {
   text-align: left;
-  font-size: 20px;
+  font-size: 1rem;
 }
