@@ -47,3 +47,9 @@ li {
   text-align: left;
   font-size: 1rem;
 }
+
+/* 強調文字（**text**） */
+strong {
+  color: #002f44; /* ここに希望の色を指定（例：赤色） */
+  font-size: 1.25rem;
+}
