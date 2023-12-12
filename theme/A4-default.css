@@ -2,13 +2,11 @@
 
 @import 'default';
 
-@page {
-  size: A4;
-  margin: 0;
-}
-
 section {
-  font-size: 24px;
+  width: 210mm;
+  height: 297mm;
+  justify-content: start;
+  font-size: 18px;
   padding: 1cm;
 }
 
@@ -24,7 +22,7 @@ header, footer {
   position: fixed;
   width: 100%;
   text-align: right;
-  font-size: 16px;
+  font-size: 9px;
   padding: 0.5cm;
 }
 
