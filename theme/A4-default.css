@@ -1,6 +1,6 @@
 /* @theme A4-default */
 
-@import 'default';
+@import 'uncover';
 
 section
 {
@@ -11,35 +11,35 @@ section
   
   padding: 1cm;
   font-size: 20px;
-  /* text-align: left; */
+  text-align: left;
 }
 
 h1 {
-  /* text-align: center; */
+  text-align: center;
 }
 
 h2 {
-  /* text-align: center; */
+  text-align: center;
 
   font-size: 30px;
 }
 
 h3 {
-  /* text-align: center; */
+  text-align: center;
   font-size: 25px;
 }
 
 h4 {
-  /* text-align: left; */
+  text-align: left;
   font-size: 20px;
 }
 
 p {
-  /* text-align: left; */
+  text-align: left;
   font-size: 20px;
 }
 
 li {
-  /* text-align: left; */
+  text-align: left;
   font-size: 20px;
 }
