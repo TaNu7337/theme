@@ -6,9 +6,12 @@ section
 {
   width: 210mm;
   height: 297mm;
+
   justify-content: start;
+  
   padding: 1cm;
   font-size: 20px;
+  text-align: left;
 }
 
 h2 {
@@ -20,13 +23,16 @@ h3 {
 }
 
 h4 {
+  text-align: left;
   font-size: 20px;
 }
 
 p {
+  text-align: left;
   font-size: 20px;
 }
 
 li {
+  text-align: left;
   font-size: 20px;
 }
