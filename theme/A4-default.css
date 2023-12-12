@@ -3,29 +3,26 @@
 @import 'default';
 
 
-<style>
-  :root {
-    --color-background: #ddd;
-    --color-background-code: #ccc;
-    --color-background-paginate: rgba(128, 128, 128, 0.05);
-    --color-foreground: #345;
-    --color-highlight: #99c;
-    --color-highlight-hover: #aaf;
-    --color-highlight-heading: #99c;
-    --color-header: #bbb;
-    --color-header-shadow: transparent;
-  }
-</style>
+root {
+  --color-background: #ddd;
+  --color-background-code: #ccc;
+  --color-background-paginate: rgba(128, 128, 128, 0.05);
+  --color-foreground: #345;
+  --color-highlight: #99c;
+  --color-highlight-hover: #aaf;
+  --color-highlight-heading: #99c;
+  --color-header: #bbb;
+  --color-header-shadow: transparent;
+}
 
 
-section
-{
-  
+section {
+
   width: 210mm;
   height: 297mm;
-  
+
   justify-content: start;
-  
+
   padding: 1cm;
   font-size: 20px;
 
