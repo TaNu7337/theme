@@ -9,8 +9,12 @@ section {
 
   justify-content: start;
 
-  padding: 1.5cm;
-  font-size: 16px;
+  padding-top: 1cm;
+  padding-bottom: 1cm;
+  padding-right: 1.5cm;
+  padding-left: 1.5cm;
+
+  font-size: 14px;
 
   text-align: left;
 }
