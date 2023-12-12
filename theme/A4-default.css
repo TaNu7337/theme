@@ -2,10 +2,12 @@
 
 @import 'default';
 
-section {
-  /* A4 document size */
+section
+{
   width: 210mm;
   height: 297mm;
+  justify-content: start;
+  padding: 50px;
 }
 
 h2 {
