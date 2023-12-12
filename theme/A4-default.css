@@ -19,14 +19,7 @@ section {
 h1 {
   text-align: center;
   font-size: 2.2rem;
-
-  display: inline-block; /* バーの幅をテキストの幅に合わせる */
-  margin: 0 auto; /* 上下の余白を設定し、水平方向に中央寄せ */
-  padding: 10px 20px; /* テキストの周囲の余白 */
-  background-color: #7F7F7F; /* バーの背景色 */
-  color: white; /* テキストの色 */
-  border-radius: 25px; /* バーの角の丸み */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影の効果 */
+  color: black; /* テキストの色 */
 }
 
 h2 {
