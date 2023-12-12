@@ -50,6 +50,6 @@ li {
 
 /* 強調文字（**text**） */
 strong {
-  color: #442700;
+  /* color: #442700; */
   font-size: 1.25rem;
 }
