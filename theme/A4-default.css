@@ -36,7 +36,7 @@ h1:before {
   left: 0;
   top: 0;
   bottom: 0;
-  width: 0;
+  width: 5px;
   background-color: #000;
 }
 
