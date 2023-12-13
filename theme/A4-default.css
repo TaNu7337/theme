@@ -22,7 +22,18 @@ section {
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  color: black; /* テキストの色 */
+  color: black;
+  
+  /* テキストの色 */
+  position: relative;
+  background-color: #4CAF50;
+  /* 緑色の背景 */
+  color: white;
+  /* 白色のテキスト */
+  padding: 10px 0;
+  /* 上下のパディング */
+  margin: 20px 0;
+  /* 上下のマージン */
 }
 
 h2 {
