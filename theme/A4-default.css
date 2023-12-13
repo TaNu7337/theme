@@ -22,7 +22,7 @@ section {
 h1 {
   text-align: center;
   font-size: 2.5rem;
-  
+
   position: relative;
   background-color: #eeeeee;
   color: black;
@@ -76,7 +76,30 @@ h3 {
 h4 {
   text-align: left;
   font-size: 1.25rem;
+
+  position: relative;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 5px;
 }
+
+h5 {
+  text-align: left;
+  font-size: 1.125rem;
+
+  padding: 5px 10px;
+  margin: 5px 0;
+}
+
+h5:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 5px;
+  background-color: #eeeeee;
+}
+
 
 p {
   text-align: left;
