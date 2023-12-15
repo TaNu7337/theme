@@ -1,58 +1,88 @@
+@charset "UTF-8";
 /* @theme A4-default */
-
 @import 'default';
 
-section {
 
+/* ページ全体の設定 ////////////////////////////////*/
+section {
+  /* 用紙のサイズ：A4 */
   width: 210mm;
   height: 297mm;
 
+  /* 文字の開始地点を、用紙の先頭左側から */
   justify-content: start;
+  text-align: left;
 
+  letter-spacing: 0.15rem;
+
+  /* 用紙周囲の余白 */
   padding-top: 1cm;
   padding-bottom: 1cm;
   padding-right: 1.5cm;
   padding-left: 1.5cm;
 
-  font-size: 14px;
+  /* フォントサイズ */
+  font-size: 13px;
+  
+  /* フォントの種類 */
+  /* font-family: 'BIZ UD明朝'; */
+  font-family: 'BIZ UDPゴシック';
 
-  text-align: left;
+  /* 表示面の高さ制限：なし */
+  max-height: none;
 }
 
+h1,h2,h3,h4,h5 {
+  letter-spacing: 0.05rem;
+}
+
+/* //////////////////////////////// */
+/* h1//////////////////////////////// */
 h1 {
   text-align: center;
   font-size: 2.5rem;
-
   position: relative;
-  background-color: #eeeeee;
+  background-color: #dadada;
   color: black;
   padding: 10px 0;
   margin: 20px 0;
 }
 
-h1:before {
-  content: '';
+h1:before,
+h1:after {
+  content: "";
   position: absolute;
-  left: 0;
   top: 0;
   bottom: 0;
   width: 10px;
+  /* 線の太さ */
   background-color: #000;
+  /* 線の色 */
 }
 
-h2 {
-  text-align: left;
-  font-size: 2.0rem;
+h1:before {
+  left: 0;
+  /* 左側に線を配置 */
+}
 
+h1:after {
+  right: 0;
+  /* 右側に線を配置 */
+}
+
+/* //////////////////////////////// */
+/* h2//////////////////////////////// */
+h2 {
+  font-size: 2rem;
   position: relative;
-  background-color: #eeeeee;
+  background-color: #dadada;
   color: black;
   padding: 5px 15px;
   margin: 10px 0;
 }
 
 h2:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -61,56 +91,148 @@ h2:before {
   background-color: #000;
 }
 
-
+/* //////////////////////////////// */
+/* h3//////////////////////////////// */
 h3 {
-  text-align: left;
   font-size: 1.5rem;
-
   position: relative;
-  background-color: #eeeeee;
+  background-color: #dadada;
   color: black;
   padding: 5px 5px;
   margin: 5px 0;
 }
 
+/* //////////////////////////////// */
+/* h4//////////////////////////////// */
 h4 {
   text-align: left;
   font-size: 1.25rem;
-
   position: relative;
-  border-bottom: 2px solid #eeeeee;
+  border-bottom: 2px solid #dadada;
   padding-bottom: 5px;
+  margin-bottom: 5px;
+  margin-top: 20px;
 }
 
+/* //////////////////////////////// */
+/* h5//////////////////////////////// */
 h5 {
   text-align: left;
-  font-size: 3rem;
-
-  padding: 5px 5px;
-  margin: 5px 0;
+  font-size: 1.125rem;
+  position: relative;
+  color: black;
+  padding: 0px 7px;
+  margin-bottom: 2px;
+  margin-top: 2px;
 }
 
 h5:before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  width: 5px;
-  background-color: black;
+  width: 2px;
+  background-color: #000;
 }
 
+/* //////////////////////////////// */
 
-p {
+/* h5//////////////////////////////// */
+h5 {
   text-align: left;
+  font-size: 1.0rem;
+  position: relative;
+  color: black;
+  padding: 0px 7px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+h5:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background-color: #000;
+}
+
+/* //////////////////////////////// */
+/* 通常文字//////////////////////////////// */
+p {
   font-size: 1rem;
 }
-
+/* 箇条書き */
 li {
   text-align: left;
   font-size: 1rem;
+  letter-spacing: 0.05rem;
+}
+/* 斜体文字 */
+em {
+  font-style: normal;
+  letter-spacing: 0.0rem;
 }
 
+/* 強調文字 */
 strong {
   font-size: 1.125rem;
+  letter-spacing: 0.0rem;
 }
+
+/* //////////////////////////////// */
+/* 引用表現//////////////////////////////// */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  border-right: 10px solid #ccc;
+  margin: 1em 20px;
+  padding: 0.5em 20px;
+  text-align: justify;
+}
+
+blockquote:before,
+blockquote:after {
+  color: #ccc;
+  content: "“";
+  /* 大きな開始引用符 */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote:before {
+  margin-right: 0.25em;
+}
+
+blockquote:after {
+  margin-left: 0.25em;
+}
+
+blockquote p {
+  display: inline;
+}
+/* //////////////////////////////// */
+/* コードブロック//////////////////////////////// */
+pre {
+  border: 1px solid var(--color-border-default);
+  line-height: 1.15;
+  overflow: auto;
+}
+
+pre::part(auto-scaling) {
+  max-height: 270mm;
+}
+
+pre,
+code {
+  padding: 1em;
+  overflow: visible;
+  border-radius: 5px;
+  letter-spacing: 0.05rem;
+
+  font-family: 'Migu 1M';
+}
+/* //////////////////////////////// */
