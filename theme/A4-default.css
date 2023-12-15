@@ -13,7 +13,7 @@ section {
   justify-content: start;
   text-align: left;
 
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 
   /* 用紙周囲の余白 */
   padding-top: 1cm;
@@ -163,6 +163,7 @@ h5:before {
 /* 通常文字//////////////////////////////// */
 p {
   font-size: 1rem;
+  text-indent: 1rem;
 }
 /* 箇条書き */
 li {
@@ -180,6 +181,7 @@ em {
 strong {
   font-size: 1.125rem;
   letter-spacing: 0.0rem;
+  margin-right: 0.1em;
 }
 
 /* //////////////////////////////// */
@@ -217,7 +219,7 @@ blockquote p {
 /* //////////////////////////////// */
 /* コードブロック//////////////////////////////// */
 pre {
-  border: 1px solid var(--color-border-default);
+  border: 3px solid var(#dadada);
   line-height: 1.15;
   overflow: auto;
 }
@@ -228,11 +230,16 @@ pre::part(auto-scaling) {
 
 pre,
 code {
+  font-size: 1em;
+
   padding: 1em;
   overflow: visible;
-  border-radius: 5px;
+  border-radius: 10px;
   letter-spacing: 0.05rem;
 
+  background-color: #ffffff; /* 薄灰色の背景 */
+
   font-family: 'Migu 1M';
+
 }
 /* //////////////////////////////// */
