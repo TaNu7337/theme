@@ -36,6 +36,7 @@ h1,h2,h3,h4,h5 {
   letter-spacing: 0.05rem;
 }
 
+
 /* //////////////////////////////// */
 /* h1//////////////////////////////// */
 h1 {
@@ -141,7 +142,7 @@ h5:before {
 /* h5//////////////////////////////// */
 h5 {
   text-align: left;
-  font-size: 1.0rem;
+  font-size: 1.062rem;
   position: relative;
   color: black;
   padding: 0px 7px;
@@ -163,7 +164,7 @@ h5:before {
 /* 通常文字//////////////////////////////// */
 p {
   font-size: 1rem;
-  text-indent: 1rem;
+  /* text-indent: 1rem; */
 }
 /* 箇条書き */
 li {
@@ -228,13 +229,18 @@ pre::part(auto-scaling) {
   max-height: 270mm;
 }
 
+code {
+  padding: 2px; /* 隙間のサイズを調整 */
+  border: 1px solid #dadada; /* 枠線のスタイルを設定 */
+  /* その他必要なスタイルを追加 */
+}
+
 pre,
 code {
-  font-size: 1em;
+  font-size: 1rem;
 
-  padding: 1em;
   overflow: visible;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   letter-spacing: 0.05rem;
 
   background-color: #ffffff; /* 薄灰色の背景 */
