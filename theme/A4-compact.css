@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/* @theme A4-geppou */
+@import 'default';
+
+
+/* ページ全体の設定 ////////////////////////////////*/
+section {
+  /* 用紙のサイズ：A4 */
+  width: 210mm;
+  height: 297mm;
+
+  /* 文字の開始地点を、用紙の先頭左側から */
+  justify-content: start;
+  text-align: left;
+
+  letter-spacing: 0.05rem;
+
+  /* 用紙周囲の余白 */
+  padding-top: 0.8cm;
+  padding-bottom: 0.8cm;
+  padding-right: 1.5cm;
+  padding-left: 1.5cm;
+
+  /* フォントサイズ */
+  font-size: 14px;
+  
+  /* フォントの種類 */
+  /* font-family: 'BIZ UD明朝'; */
+  font-family: 'BIZ UDPゴシック';
+
+  /* 表示面の高さ制限：なし */
+  max-height: none;
+}
+
+h1,h2,h3,h4,h5 {
+  letter-spacing: 0.05rem;
+}
+
+
+/* //////////////////////////////// */
+/* h1//////////////////////////////// */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  background-color: #dadada;
+  color: black;
+  padding: 0.1em 0;
+  margin: 0.1em 0;
+}
+
+h1:before,
+h1:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 0.5em;
+  /* 線の太さ */
+  background-color: #000;
+  /* 線の色 */
+}
+
+h1:before {
+  left: 0;
+  /* 左側に線を配置 */
+}
+
+h1:after {
+  right: 0;
+  /* 右側に線を配置 */
+}
+
+/* //////////////////////////////// */
+/* h2//////////////////////////////// */
+h2 {
+  font-size: 1.5rem;
+  position: relative;
+  background-color: #dadada;
+  color: black;
+  padding: 0.1em 0.5em;
+  margin: 0.1em 0;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.25em;
+  background-color: #000;
+}
+
+/* //////////////////////////////// */
+/* h3//////////////////////////////// */
+h3 {
+  font-size: 1.2rem;
+  position: relative;
+  background-color: #dadada;
+  color: black;
+  padding: 0.2em 0.2em;
+  margin: 0.1em 0;
+}
+
+/* //////////////////////////////// */
+/* h4//////////////////////////////// */
+h4 {
+  text-align: left;
+  font-size: 1rem;
+  position: relative;
+  border-bottom: 2px solid #dadada;
+  padding: 0.1em 0.2em;
+  margin: 0.1em 0;
+}
+
+/* //////////////////////////////// */
+
+
+/* h5//////////////////////////////// */
+h5 {
+  text-align: left;
+  font-size: 1rem;
+  position: relative;
+  color: black;
+  padding: 0px 7px;
+  margin-bottom: 2px;
+  margin-top: 2px;
+}
+
+h5:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0em;
+  bottom: 0em;
+  width: 0.15em;
+  background-color: #000;
+}
+
+/* //////////////////////////////// */
+/* 通常文字//////////////////////////////// */
+p {
+  font-size: 1rem;
+  /* text-indent: 1rem; */
+}
+
+/* 箇条書き//////////////////////////////// */
+li {
+  text-align: left;
+  font-size: 1rem;
+  letter-spacing: 0.05rem;
+  margin-bottom: 0.2em;
+}
+
+ul, ol {
+  margin-top: 0.1em;    /* 上のマージン */
+  margin-bottom: 0.5em; /* 下のマージン */
+}
+
+/* //////////////////////////////// */
+
+/* 斜体文字 */
+em {
+  font-style: normal;
+  letter-spacing: 0.0rem;
+}
+
+/* 強調文字 */
+strong {
+  font-size: 1.125rem;
+  letter-spacing: 0.0rem;
+  margin-right: 0.1em;
+  font-family: 'BIZ UDPゴシック';
+}
+
+/* //////////////////////////////// */
+/* 引用表現//////////////////////////////// */
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  border-right: 10px solid #ccc;
+  margin: 1em 20px;
+  padding: 0.5em 20px;
+  text-align: justify;
+}
+
+blockquote:before,
+blockquote:after {
+  color: #ccc;
+  content: "“";
+  /* 大きな開始引用符 */
+  font-size: 4em;
+  line-height: 0.1em;
+  vertical-align: -0.4em;
+}
+
+blockquote:before {
+  margin-right: 0.25em;
+}
+
+blockquote:after {
+  margin-left: 0.25em;
+}
+
+blockquote p {
+  display: inline;
+}
+/* //////////////////////////////// */
+/* コードブロック//////////////////////////////// */
+pre {
+  border: 3px solid var(#dadada);
+  line-height: 1.15;
+  overflow: auto;
+}
+
+pre::part(auto-scaling) {
+  max-height: 270mm;
+}
+
+code {
+  padding: 2px; /* 隙間のサイズを調整 */
+  border: 1px solid #dadada; /* 枠線のスタイルを設定 */
+  /* その他必要なスタイルを追加 */
+}
+
+pre,
+code {
+  font-size: 1rem;
+
+  overflow: visible;
+  border-radius: 0.5rem;
+  letter-spacing: 0.05rem;
+
+  background-color: #ffffff; /* 薄灰色の背景 */
+
+  font-family: 'Migu 1M';
+
+}
+/* //////////////////////////////// */
