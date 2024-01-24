@@ -164,7 +164,7 @@ ul, ol {
 /* 斜体文字 */
 em {
   font-style: normal;
-  letter-spacing: 0.0rem;
+  font-weight: bold; /* 斜体テキストを太文字にする */
 }
 
 /* 強調文字 */
