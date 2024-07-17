@@ -108,7 +108,7 @@ h3 {
 /* h4//////////////////////////////// */
 h4 {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.15rem;
   position: relative;
   border-bottom: 2px solid #dadada;
   padding: 0.1em 0.2em;
@@ -121,7 +121,7 @@ h4 {
 /* h5//////////////////////////////// */
 h5 {
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.15rem;
   position: relative;
   color: black;
   padding: 0px 7px;
@@ -144,6 +144,7 @@ h5:before {
 p {
   font-size: 1rem;
   /* text-indent: 1rem; */
+  margin-bottom: 0.2rem;
 }
 
 /* 箇条書き//////////////////////////////// */
@@ -151,6 +152,7 @@ li {
   text-align: left;
   font-size: 1rem;
   letter-spacing: 0.05rem;
+  margin-top: 0.1em;
   margin-bottom: 0.2em;
 }
 
@@ -239,3 +241,21 @@ code {
 
 }
 /* //////////////////////////////// */
+/* 表//////////////////////////////// */
+
+table, th, td {
+  border: 1px solid #7F7F7F;
+  border-collapse: collapse;
+}
+
+table {
+  font-size: 0.9rem;  /* フォントサイズを12pxに設定 */
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 左側に揃える */
+  box-sizing: border-box;
+}

@@ -249,3 +249,21 @@ code {
 
 }
 /* //////////////////////////////// */
+/* 表//////////////////////////////// */
+
+table, th, td {
+  border: 1px solid #7F7F7F;
+  border-collapse: collapse;
+}
+
+table {
+  font-size: 0.9rem;  /* フォントサイズを12pxに設定 */
+  overflow: visible;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 左側に揃える */
+  box-sizing: border-box;
+}
