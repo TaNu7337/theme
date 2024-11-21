@@ -22,7 +22,7 @@ section {
   padding-left: 1.5cm;
 
   /* フォントサイズ */
-  font-size: 11.5px;
+  font-size: 12px;
   
   /* フォントの種類 */
   /* font-family: 'BIZ UD明朝'; */
@@ -108,7 +108,7 @@ h3 {
 /* h4//////////////////////////////// */
 h4 {
   text-align: left;
-  font-size: 1.15rem;
+  font-size: 1rem;
   position: relative;
   border-bottom: 2px solid #dadada;
   padding: 0.1em 0.2em;
