@@ -253,6 +253,24 @@ table {
   overflow: visible;
 }
 
+/* Container for headers */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.header-container h1,
+.header-container h2,
+.header-container h3,
+.header-container h4,
+.header-container h5 {
+    width: 100%;
+}
+
 .container {
   display: flex;
   justify-content: space-between;
